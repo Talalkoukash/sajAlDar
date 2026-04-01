@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com;
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        font-src https://fonts.gstatic.com;
+        img-src 'self' https://images.unsplash.com data:;
+        connect-src 'none';
+    ">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="no-referrer">
+
+    
+    <title>صاج الدار | Saj Al Dar</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap"
+        rel="stylesheet"
+        crossorigin="anonymous"
+    >
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dar-brown': '#5C3D2E',
+                        'dar-gold':  '#D99058',
+                        'dar-cream': '#F9F4E8',
+                    },
+                    fontFamily: {
+                        arabic: ['Amiri', 'serif'],
+                        sans:   ['Cairo', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { background-color: #F9F4E8; }
+        .hero-bg {
+            background:
+                linear-gradient(rgba(62,39,28,0.72), rgba(62,39,28,0.72)),
+                url('https://images.unsplash.com/photo-1510076857177-7470076d4098?auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+      
+        .product-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+        .product-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(92,61,46,0.15); }
+    </style>
+</head>
+<body class="text-gray-900 font-sans">
+
+  
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-dar-gold/20 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img
+                    src="AlDar-01.png"
+                    alt="شعار صاج الدار"
+                    class="h-14 w-14 rounded-full border border-dar-gold object-cover"
+                    loading="lazy"
+                    decoding="async"
+                >
+                <h1 class="font-arabic text-2xl font-bold text-dar-brown">صاج الدار</h1>
+            </div>
+
+        
+            <a
+                href="https://wa.me/9613884695?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%B5%D8%A7%D8%AC%20%D8%B9%D8%B1%D8%A8%D9%8A%20%D9%85%D9%86%20%D8%B5%D8%A7%D8%AC%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%F0%9F%AB%93"
+                target="_blank"
+                rel="noopener noreferrer"
+                referrerpolicy="no-referrer"
+                class="bg-dar-brown text-white px-5 py-2 rounded-lg font-bold hover:bg-dar-gold hover:text-dar-brown transition-all"
+                aria-label="اطلب عبر واتساب"
+            >
+                اطلب الآن
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero-bg min-h-[70vh] flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-2xl">
+            <h2 class="font-arabic text-5xl md:text-7xl text-white mb-6 drop-shadow-md">خبز صاج عربي</h2>
+            <p class="text-white/90 text-xl mb-8">من قلب الدار إلى مائدتكم.. طعم التقاليد في كل لقمة</p>
+            <a
+                href="#menu"
+                class="inline-block bg-dar-gold text-dar-brown px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:scale-105 transition-transform"
+            >
+                تصفح المنيو
+            </a>
+        </div>
+    </section>
+
+
+    <main id="menu" class="py-20 container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h3 class="font-arabic text-4xl text-dar-brown">القائمة</h3>
+            <div class="w-20 h-1 bg-dar-gold mx-auto mt-4 rounded-full"></div>
+        </div>
+
+    
+        <div class="flex justify-center">
+            <div class="product-card bg-white rounded-2xl shadow-md overflow-hidden border border-dar-gold/10 w-full max-w-sm">
+                <div class="h-60 bg-gray-100">
+                    <img
+                        src="saj.webp"
+                        class="w-full h-full object-cover"
+                        alt="صاج عربي"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+                <div class="p-6">
+                    <h4 class="text-xl font-bold text-dar-brown mb-1">صاج عربي</h4>
+                    <p class="text-gray-500 text-sm mb-5">عجينة الصاج الرقيقة، طازجة ولذيذة.</p>
+
+                    
+                    <a
+                        href="https://wa.me/9613884695?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A3%D8%B7%D9%84%D8%A8%20%D8%B5%D8%A7%D8%AC%20%D8%B9%D8%B1%D8%A8%D9%8A%20%D9%85%D9%86%20%D8%B5%D8%A7%D8%AC%20%D8%A7%D9%84%D8%AF%D8%A7%D8%B1%20%F0%9F%AB%93"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        referrerpolicy="no-referrer"
+                        class="block w-full py-2 text-center border-2 border-dar-brown text-dar-brown font-bold rounded-lg hover:bg-dar-brown hover:text-white transition-colors"
+                        aria-label="أضف صاج عربي للطلب عبر واتساب"
+                    >
+                        أضف للطلب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="bg-dar-brown text-dar-cream py-8 text-center">
+        <p class="font-arabic text-xl mb-2">صاج الدار &mdash; Saj Al Dar</p>
+        <p class="text-sm opacity-60">جميع الحقوق محفوظة &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
